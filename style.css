@@ -1,0 +1,48 @@
+        body {            
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: green;
+            font-family: Georgia;
+        }
+
+        p {
+            color: blue;
+            font-size: 20px;
+        }
+
+        div {
+            margin: 20px;
+            padding: 10px;
+            text-decoration: dashed;
+            text-align: center;
+        }
+
+        .fundo {            
+            background-image: url('imagens/conhecimento.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.8;
+            background-position: center;
+            image-rendering: pixelated;
+            background-attachment: fixed;
+
+        }
+        form {
+            font-size: 35px;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif; color:brown;
+            border-width: 2px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid black;
+            text-align: center;
+            text-align: center;
+        }
+        .Logo img{
+            height: 100px;
+            width: 150px;
+        }
