@@ -15,11 +15,25 @@ p {
 div {
     margin: 20px;
     padding: 10px;
-    text-align: left;
-    /* Se a ideia era sublinhar com estilo tracejado */
-    text-decoration: underline dashed;
+    text-align: left;    
+    text-decoration: underline dashed;    
 }
-
+.social {    
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    transform: translateY(100px);
+    transform: translateX(1000px);
+}
+.social a i {
+    font-size: 40px; 
+    margin: 0 10px;  
+    color: #cf3232;  
+    transition: color 0.3s;
+}
+.social a i:hover {
+    color: #3bf023; 
+}
 form {
     font-size: 35px;
     font-style: italic;
@@ -51,11 +65,12 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     padding: 10px 18px;
-    background-color: #007bff;
+    background-color: #463921;
     color: white;
     border-radius: 6px;
     transition: background 0.3s;
     font-weight: bold;
+    
 }
 
 nav ul li a:hover {
@@ -96,4 +111,11 @@ nav ul li a:hover {
 
 .elemento-estatico {
     position: static;
+}
+nav ul li {
+     position: relative;
+    top: 20px; 
+    left: 30px; 
+    background-color: #c08415;
+    padding: 10px;    
 }
