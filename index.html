@@ -1,54 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSPTEL-18082025</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSP CAR Revenda</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-    <header class="container">
-        <div class="Logo">
-            <img src="/img/Logo.png" alt="Logo da Empresa">         
-        </div>
+<body> 
+ 
+  <header class="topo">
+    <div class="logo">
+      <img src="/img/Logodsp.png" alt="Logo da Revenda">
+    </div>
 
-        <div class="top-bar">
-            <!-- Pode colocar telefone, email ou slogan aqui -->
-        </div>
+    <nav>
+      <ul>
+        <li><a href="#marcas">Marcas</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+        <li><a href="#valor">Tabela de Preços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
 
-        <div class="social">
-            <a href="https://github.com/DeoclecioSpielmann1" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://instagram.com/deocleciospielmann" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/deoclecio-spielmann-19b144349" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-</a>
-        </div>
+    <div class="social">
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://wa.me/554999901-0850" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </header>
 
-        <div class="Campo">
-            <input id="nome" type="text" required>
-            <label for="nome">Deoclécio Spielmann</label>
-        </div>
+  <section id="marcas" class="conteudo">
+    <h1>Marcas de Carros</h1>
+    <p>Trabalhamos com as principais marcas do mercado.</p>
+    <div class="marcas">
+      <img src="/img/fiat.png" alt="Fiat">
+      <img src="/img/chevrolet.png" alt="Chevrolet">
+      <img src="/img/ford.png" alt="Ford">
+      <img src="/img/volkswagen.png" alt="Volkswagen">
+    </div>
+  </section>
 
-        <div class="elemento-estatico">
-            Este é um elemento estático.
-        </div>
+  <section id="modelos" class="conteudo">
+    <h1>Modelos em Destaque</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Ano</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fiat</td>
+          <td>Argo</td>
+          <td>2022</td>
+          <td>R$ 65.900</td>
+        </tr>
+        <tr>
+          <td>Chevrolet</td>
+          <td>Onix</td>
+          <td>2021</td>
+          <td>R$ 62.500</td>
+        </tr>
+        <tr>
+          <td>Volkswagen</td>
+          <td>Gol</td>
+          <td>2020</td>
+          <td>R$ 55.000</td>
+        </tr>        
+        <tr>
+          <td>Ford</td>
+          <td>Ka</td>
+          <td>2019</td>
+          <td>R$ 48.900</td>
+        </tr>
+        
+        <a href="https://wa.me/5549999010850" 
+        class="whatsapp-float" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+        </a>
 
-        <p>
-            Este é um parágrafo que segue o fluxo normal do documento, após o elemento estático.
-        </p>
+      </tbody>
+    </table>
+  </section>
 
-        <nav>
-            <ul>
-                <li><a href="#marcas">Marcas</a></li>
-                <li><a href="#modelos">Modelos</a></li>
-                <li><a href="#valor">Valor de Tabela</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section id="contato" class="conteudo">
+    <h1>Entre em Contato</h1>
+    <form>
+      <div class="campo">
+        <input type="text" id="nome" required>
+        <label for="nome">Seu Nome</label>
+      </div>
+      <div class="campo">
+        <input type="email" id="email" required>
+        <label for="email">Seu Email</label>
+      </div>
+      <div class="campo">
+        <input type="tel" id="telefone" required>
+        <label for="telefone">Telefone</label>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>© 2025 Deoclécio Spielmann - Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
