@@ -54,24 +54,28 @@
       </thead>
       <tbody>
         <tr>
+          <td><img src="/img/Fiat-Argo-HGT-2021-08.jpg" alt="Fiat Argo" class="carro-img"></td>
           <td>Fiat</td>
           <td>Argo</td>
-          <td>2022</td>
+          <td>2021</td>
           <td>R$ 65.900</td>
         </tr>
         <tr>
+          <td><img src="/img/Chevrolet-Onix-2021.jpg" alt="Chevrolet Onix" class="carro-img"></td>
           <td>Chevrolet</td>
           <td>Onix</td>
           <td>2021</td>
           <td>R$ 62.500</td>
         </tr>
         <tr>
+          <td><img src="/img/Volkswagen-gol-2020.jpg" alt="Volkswagen Gol" class="carro-img"></td>
           <td>Volkswagen</td>
           <td>Gol</td>
           <td>2020</td>
           <td>R$ 55.000</td>
         </tr>        
         <tr>
+          <td><img src="/img/Ford-Ka.jpg" alt="Ford ka" class="carro-img"></td>
           <td>Ford</td>
           <td>Ka</td>
           <td>2019</td>
@@ -107,6 +111,30 @@
       <button type="submit">Enviar</button>
     </form>
   </section>
+
+<td>
+  <img src="carro1.jpg" alt="Carro 1" class="carro-img">
+</td>
+
+<div class="lightbox" id="lightbox">
+  <img src="" alt="Carro ampliado" id="lightbox-img">
+</div>
+<script>
+  const imagens = document.querySelectorAll('.carro-img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  imagens.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src; 
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+</script>
   
   <footer>
     <p>© 2025 Deoclécio Spielmann - Todos os direitos reservados</p>
